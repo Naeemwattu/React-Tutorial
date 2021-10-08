@@ -68,20 +68,51 @@
 
 // -----------1st Challange in React App-----------
 
-import React from "react";
-import ReactDOM from "react-dom";
+// import React from "react";
+// import ReactDOM from "react-dom";
 
-ReactDOM.render(
+// ReactDOM.render(
+//   <>
+//     <h1>Nomi Technical Netflix Series</h1>
+//     <p>List of Best 5 Series</p>
+//     <ol>
+//       <li>Money Hiest</li>
+//       <li>Venom</li>
+//       <li>SpiderMAn</li>
+//       <li>Avengers</li>
+//       <li>Captain America</li>
+//     </ol>
+//   </>,
+//   document.getElementById('root')
+// );
+
+
+
+// --------------JavaScript Expressions &  ES6 Template Literal in JSX in ReactJs-----
+
+import React from "react";
+import ReactDom from "react-dom";
+
+const fname = "Muhammad";
+const lname = "Naeem Abbas";
+const faname ="Tahir Abbas";
+
+ReactDom.render(
   <>
-    <h1>Nomi Technical Netflix Series</h1>
-    <p>List of Best 5 Series</p>
-    <ol>
-      <li>Money Hiest</li>
-      <li>Venom</li>
-      <li>SpiderMAn</li>
-      <li>Avengers</li>
-      <li>Captain America</li>
-    </ol>
+    <h1>1-My Name is {fname}  {lname} </h1>
+
+    <h1>2-My Name is {fname + " " + lname}</h1>
+
+    <h1>3-My Name is {`${fname} ${lname}`}</h1>
+
+    <h1>{`4-My name is ${fname} ${lname}`}</h1>
+
+    <h1>{`5--My First Name is "${fname}" and My last Name is "${lname}".`}</h1>
+
+    <h2>My Father Name is {faname} </h2>
+    <p>I am live in Sambrial Mohallah Rasool Pura Street No.4</p>
+    <p>My lucky Number is {Math.random()} </p>
   </>,
   document.getElementById('root')
 );
+ 
