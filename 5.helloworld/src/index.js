@@ -90,29 +90,45 @@
 
 // --------------JavaScript Expressions &  ES6 Template Literal in JSX in ReactJs-----
 
+// import React from "react";
+// import ReactDom from "react-dom";
+
+// const fname = "Muhammad";
+// const lname = "Naeem Abbas";
+// const faname ="Tahir Abbas";
+
+// ReactDom.render(
+//   <>
+//     <h1>1-My Name is {fname}  {lname} </h1>
+
+//     <h1>2-My Name is {fname + " " + lname}</h1>
+
+//     <h1>3-My Name is {`${fname} ${lname}`}</h1>
+
+//     <h1>{`4-My name is ${fname} ${lname}`}</h1>
+
+//     <h1>{`5--My First Name is "${fname}" and My last Name is "${lname}".`}</h1>
+
+//     <h2>My Father Name is {faname} </h2>
+//     <p>I am live in Sambrial Mohallah Rasool Pura Street No.4</p>
+//     <p>My lucky Number is {Math.random()} </p>
+//   </>,
+//   document.getElementById('root')
+// );
+ 
+
 import React from "react";
-import ReactDom from "react-dom";
+import ReactDOM from "react-dom";
 
-const fname = "Muhammad";
-const lname = "Naeem Abbas";
-const faname ="Tahir Abbas";
+const flname = "Muhammad Naeem Abbas";
+const currDate = new Date().toLocaleDateString();
+const currTime = new Date().toLocaleTimeString();
 
-ReactDom.render(
+ReactDOM.render(
   <>
-    <h1>1-My Name is {fname}  {lname} </h1>
-
-    <h1>2-My Name is {fname + " " + lname}</h1>
-
-    <h1>3-My Name is {`${fname} ${lname}`}</h1>
-
-    <h1>{`4-My name is ${fname} ${lname}`}</h1>
-
-    <h1>{`5--My First Name is "${fname}" and My last Name is "${lname}".`}</h1>
-
-    <h2>My Father Name is {faname} </h2>
-    <p>I am live in Sambrial Mohallah Rasool Pura Street No.4</p>
-    <p>My lucky Number is {Math.random()} </p>
+    <h1>My Name is {flname}.</h1>
+    <p>Today date is = {currDate}</p>
+    <p>Today Current Time is = {currTime}</p>
   </>,
   document.getElementById('root')
 );
- 
