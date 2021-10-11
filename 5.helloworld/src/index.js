@@ -135,40 +135,74 @@
 
 // -----------------JSX Attributes in ReactJS---------------
 
+// import React from "react";
+// import ReactDom from "react-dom";
+
+// const name ="Muhammad Naeem Abbas";
+// const img1 ="https://picsum.photos/200/200";
+// const img2 ="https://picsum.photos/300/300";
+// const img3 ="https://picsum.photos/400/400";
+// const link ="https://analyticalblog.com"
+
+// const heading = {
+//   color:'green',
+//   textAlign:'center',
+//   margin:'60px 0',
+//   textTransform:'capitalize',
+//   fontWeight:'bold',
+//   textShadow:'2px 3px 15px red',
+//   fontFamily: '"Akronim", cursive'
+// }
+
+// const image = {
+//   display: 'flex',
+//   justifyContent: 'center'
+// }
+
+// ReactDom.render(
+//   <>
+//     <h1 style={heading}>My Name is {name}</h1>
+//     <div style={image}>
+//       <img src={img1} />
+//       <img src={img2} />
+//       <a href={link} target="_blank">
+//       <img src={img3} />
+//       </a>
+//     </div>
+//   </>,
+//   document.getElementById('root')
+// );
+
+
+
+
+// ---------------Greeting Card Challange---------
+
 import React from "react";
 import ReactDom from "react-dom";
+import './index.css';
 
-const name ="Muhammad Naeem Abbas";
-const img1 ="https://picsum.photos/200/200";
-const img2 ="https://picsum.photos/300/300";
-const img3 ="https://picsum.photos/400/400";
-const link ="https://analyticalblog.com"
+let curDate = new Date(2021,10,11, 20);
+curDate = curDate.getHours();
+let greeting = "";
+const cssStyle = { }
 
-const heading = {
-  color:'green',
-  textAlign:'center',
-  margin:'60px 0',
-  textTransform:'capitalize',
-  fontWeight:'bold',
-  textShadow:'2px 3px 15px red',
-  fontFamily: '"Akronim", cursive'
-}
-
-const image = {
-  display: 'flex',
-  justifyContent: 'center'
+if (curDate >= 1 && curDate < 12) {
+  greeting ="Good Morning";
+  cssStyle.color ="green"
+} else if(curDate >= 12 && curDate < 19) {
+  greeting ="Good Afternoon";
+  cssStyle.color ="orange"
+}else{
+  greeting ="Good Night";
+  cssStyle.color ="blue"
 }
 
 ReactDom.render(
   <>
-    <h1 style={heading}>My Name is {name}</h1>
-    <div style={image}>
-      <img src={img1} />
-      <img src={img2} />
-      <a href={link} target="_blank">
-      <img src={img3} />
-      </a>
-    </div>
+  <div>
+    <h1>Hello Mr. MNA Wattu, <span style={cssStyle}> {greeting} </span> </h1>
+  </div>
   </>,
   document.getElementById('root')
 );
