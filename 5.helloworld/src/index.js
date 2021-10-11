@@ -117,18 +117,44 @@
 // );
  
 
+// import React from "react";
+// import ReactDOM from "react-dom";
+
+// const flname = "Muhammad Naeem Abbas";
+// const currDate = new Date().toLocaleDateString();
+// const currTime = new Date().toLocaleTimeString();
+
+// ReactDOM.render(
+//   <>
+//     <h1>My Name is {flname}.</h1>
+//     <p>Today date is = {currDate}</p>
+//     <p>Today Current Time is = {currTime}</p>
+//   </>,
+//   document.getElementById('root')
+// );
+
+// -----------------JSX Attributes in ReactJS---------------
+
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDom from "react-dom";
+import "./index.css";
 
-const flname = "Muhammad Naeem Abbas";
-const currDate = new Date().toLocaleDateString();
-const currTime = new Date().toLocaleTimeString();
+const name ="Muhammad Naeem Abbas";
+const img1 ="https://picsum.photos/200/200";
+const img2 ="https://picsum.photos/300/300";
+const img3 ="https://picsum.photos/400/400";
+const link ="https://analyticalblog.com"
 
-ReactDOM.render(
+ReactDom.render(
   <>
-    <h1>My Name is {flname}.</h1>
-    <p>Today date is = {currDate}</p>
-    <p>Today Current Time is = {currTime}</p>
+    <h1 className="heading">My Name is {name}</h1>
+    <div className="imgs">
+      <img src={img1} />
+      <img src={img2} />
+      <a href={link} target="_blank">
+      <img src={img3} />
+      </a>
+    </div>
   </>,
   document.getElementById('root')
 );
