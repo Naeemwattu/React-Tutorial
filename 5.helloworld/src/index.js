@@ -209,10 +209,29 @@
 
 
 
+// ------------using Component design Greeting Card--------
+// import React from "react";
+// import ReactDom from "react-dom";
+// import App from "./App";
+// import "./index.css";
+
+
+// ReactDom.render( <App />, document.getElementById('root'));
+
+
+
 import React from "react";
 import ReactDom from "react-dom";
-import App from "./App";
-import "./index.css";
+import nomi, {age, name,names} from "./App";
 
-
-ReactDom.render( <App />, document.getElementById('root'));
+ReactDom.render(
+  <>
+    <ol>
+      <li>{nomi}</li>
+      <li>{age}</li>
+      <li>{name()}</li>
+      <li>{names()}</li>
+    </ol>
+  </>,
+  document.getElementById('root')
+);
