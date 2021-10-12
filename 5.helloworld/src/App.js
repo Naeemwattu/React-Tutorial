@@ -29,19 +29,49 @@
 
 
 
-const nomi = "nomiwattu";
-const age = 23;
+// const nomi = "nomiwattu";
+// const age = 23;
 
- function name(){
-   let name = "naeem"
-   return name;
-  }
-  
-  function names(){
-    let names = "wattu"
-    return names;
-  }
- 
+//  function name(){
+//    let name = "naeem"
+//    return name;
+//   }
 
-export default nomi;
-export {age, name, names};
+//   function names(){
+//     let names = "wattu"
+//     return names;
+//   }
+
+
+// export default nomi;
+// export {age, name, names};
+
+
+
+
+
+// ---------------Create Simple Calculator App in React JS------
+
+
+
+function add(a, b) {
+  let sum = a + b;
+  return sum;
+}
+
+function sub(c, d) {
+  let subtract = c - d;
+  return subtract;
+}
+
+function mul(e, f) {
+  let multiple = e * f;
+  return multiple;
+}
+function div(e, f) {
+  let divide = e / f;
+  divide = divide.toFixed(2)
+  return divide;
+}
+
+export { add, sub, mul, div };

@@ -115,7 +115,7 @@
 //   </>,
 //   document.getElementById('root')
 // );
- 
+
 
 // import React from "react";
 // import ReactDOM from "react-dom";
@@ -220,18 +220,32 @@
 
 
 
+// import React from "react";
+// import ReactDom from "react-dom";
+// import nomi, {age, name,names} from "./App";
+
+// ReactDom.render(
+//   <>
+//     <ol>
+//       <li>{nomi}</li>
+//       <li>{age}</li>
+//       <li>{name()}</li>
+//       <li>{names()}</li>
+//     </ol>
+//   </>,
+//   document.getElementById('root')
+// );
+
+
+
+
+// ---------------Create Simple Calculator App in React JS------
+
 import React from "react";
 import ReactDom from "react-dom";
-import nomi, {age, name,names} from "./App";
+import Calculator from "./Calculator";
 
 ReactDom.render(
-  <>
-    <ol>
-      <li>{nomi}</li>
-      <li>{age}</li>
-      <li>{name()}</li>
-      <li>{names()}</li>
-    </ol>
-  </>,
+  <Calculator />,
   document.getElementById('root')
 );
