@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: brown;
+}
+h1{
+  color: chartreuse;
+  font-weight: bold;
+  text-align: center;
+}
+p{
+  color: rgb(130, 216, 238);
+  font-weight: bold;
+  text-align: center;
+}
+ol{
+  color: yellow;
+  padding: 20px 20px;
+  background-color: rgb(184, 93, 93);
+  border-radius: 10px;
+  width: 30%;
+}
