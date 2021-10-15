@@ -4,40 +4,24 @@ import Card from "./Cards";
 import "./index.css";
 import ArrayCard from "./ArrayCard";
 
-
+function ncard(val){
+  console.log(val)
+  return(
+    <>
+      <Card
+      imgsrc={val.imgsrc}
+      title={val.title}
+      sname={val.sname}
+      link={val.link}
+    />
+    </>
+  );
+}
 
 ReactDOM.render(
   <>
-    <Card 
-      imgsrc={ArrayCard[0].imgsrc}
-      title={ArrayCard[0].title}
-      sname={ArrayCard[0].sname}
-      link={ArrayCard[0].link}
-    />
-    <Card 
-      imgsrc={ArrayCard[1].imgsrc}
-      title={ArrayCard[1].title}
-      sname={ArrayCard[1].sname}
-      link={ArrayCard[1].link}
-    />
-    <Card 
-      imgsrc={ArrayCard[2].imgsrc}
-      title={ArrayCard[2].title}
-      sname={ArrayCard[2].sname}
-      link={ArrayCard[2].link}
-    />
-    <Card 
-      imgsrc={ArrayCard[3].imgsrc}
-      title={ArrayCard[3].title}
-      sname={ArrayCard[3].sname}
-      link={ArrayCard[3].link}
-    />
-    <Card 
-      imgsrc={ArrayCard[4].imgsrc}
-      title={ArrayCard[4].title}
-      sname={ArrayCard[4].sname}
-      link={ArrayCard[4].link}
-    />
+    <h1 className="heading">Top 5 Netflix Series with Links</h1>
+    {ArrayCard.map(ncard)}
   </>,
   document.getElementById('root')
 );
