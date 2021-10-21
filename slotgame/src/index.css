@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(100, 180, 114);
+}
+.heading{
+  padding: 25px 0;
+  text-align: center;
+  background-color: bisque;
+}
+.inner-html{
+  text-align: center;
+  padding: 10px 0;
+}
+.slotmachine{
+  border: 2px solid bisque;
+  margin: 30px 450px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  font-size: 12px;
+  border-radius: 15px;
+}
