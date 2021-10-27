@@ -31,11 +31,20 @@ const App = () => {
     time = new Date().toLocaleTimeString();
     newCtime(time);
   }
+
+  let date = new Date().toLocaleDateString();
+  const [cdate, newCdate] = useState(date);
+
+  const UpdateDate = ()=>{
+    date = new Date().toLocaleDateString();
+    newCdate(date);
+  }
   setInterval(UpdateTime,1000);
   return (
     <>
       <div>
         <h1>{ctime}</h1>
+        <h5>{cdate}</h5>
         {/* <button onClick={UpdateTime}>Get Time</button> */}
       </div>
     </>
