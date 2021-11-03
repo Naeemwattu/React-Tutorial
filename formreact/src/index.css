@@ -20,7 +20,7 @@ h1{
   text-shadow: 0 4px 4px black;
 }
 input{
-  width: 50%;
+  width: 100%;
   outline: none;
   border: 2px solid pink;
   padding: 15px 10px;
